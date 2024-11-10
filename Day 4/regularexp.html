@@ -1,0 +1,22 @@
+<script>
+    var exp = /^[1-9][0-9][0-9][0-9][0-9][0-9]$/
+    var pincode = 401044;
+    var result = exp.test(pincode);
+    console.log(result);
+
+    var exp1 = /^[6-9][0-9]{9}$/;
+    var mobile = 7776975302;
+    var result = exp1.test(mobile);
+    console.log(result);
+
+    var exp2 = /^([a-zA-Z]{5})([0-9]{4})([a-zA-Z])$/
+    var pancard= "ABCDE1234A";
+    var result =exp2.test("ABCDE1234A");
+    console.log(result);
+    
+    var exp3 = /^[a-zA-Z]([a-zA-Z ]+)?[a-zA-z]$/
+    var name = "Shweta Shrikant Padwal";
+    var result = exp3.test(name);
+    console.log(result);
+    
+</script>
